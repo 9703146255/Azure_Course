@@ -1,0 +1,107 @@
+🔹 Module 1: Introduction to Azure
+✅ What is Cloud Computing?
+✅ Benefits of Cloud Computing
+✅ Overview of Microsoft Azure
+✅ Azure Global Infrastructure
+✅ Azure Free Tier & Pricing Models
+
+🔹 Module 2: Azure Identity & Access Management (IAM)
+✅ Azure Active Directory (Azure AD)
+✅ Role-Based Access Control (RBAC)
+✅ Multi-Factor Authentication (MFA)
+✅ Conditional Access Policies
+✅ Azure AD B2C and B2B
+
+🔹 Module 3: Azure Compute Services
+✅ Virtual Machines (VMs)
+✅ Azure App Services (Web Apps)
+✅ Azure Functions (Serverless Computing)
+✅ Azure Kubernetes Service (AKS)
+✅ Azure Container Instances (ACI)
+
+🔹 Module 4: Azure Storage Services
+✅ Azure Blob Storage
+✅ Azure File Storage
+✅ Azure Table Storage
+✅ Azure Queue Storage
+✅ Azure Disk Storage
+
+🔹 Module 5: Azure Networking
+✅ Virtual Networks (VNet)
+✅ Network Security Groups (NSG)
+✅ Azure Load Balancer
+✅ Azure Application Gateway
+✅ VPN Gateway & ExpressRoute
+
+🔹 Module 6: Azure Databases
+✅ Azure SQL Database
+✅ Cosmos DB (NoSQL)
+✅ Azure Database for MySQL/PostgreSQL
+✅ Azure Data Lake Storage
+✅ Azure Synapse Analytics
+
+🔹 Module 7: Azure Security & Monitoring
+✅ Azure Security Center
+✅ Azure Sentinel (SIEM)
+✅ Azure Key Vault
+✅ Azure Defender
+✅ Azure Log Analytics
+
+🔹 Module 8: Azure DevOps & CI/CD
+✅ Azure DevOps (Repos, Pipelines, Artifacts)
+✅ Azure Git Repositories
+✅ CI/CD with Azure Pipelines
+✅ Terraform & Infrastructure as Code
+✅ Monitoring Deployments
+
+🔹 Module 9: Azure AI & Machine Learning
+✅ Azure Cognitive Services
+✅ Azure Bot Services
+✅ Azure Machine Learning Studio
+✅ AI-Powered Chatbots
+✅ Azure OpenAI Service
+
+🔹 Module 10: Azure Messaging & Event-Driven Architecture
+✅ Azure Service Bus
+✅ Event Grid
+✅ Azure Event Hubs
+✅ Azure Notification Hub
+✅ Azure Logic Apps
+
+🔹 Module 11: Azure Backup & Disaster Recovery
+✅ Azure Backup Services
+✅ Azure Site Recovery
+✅ Disaster Recovery Strategies
+✅ Backup & Restore in Azure
+✅ High Availability & Failover
+
+🔹 Module 12: Azure Governance & Cost Management
+✅ Azure Policy
+✅ Cost Management & Billing
+✅ Azure Blueprints
+✅ Resource Groups & Tagging
+✅ Best Practices for Cost Optimization
+
+🔹 Module 13: Azure IoT & Edge Computing
+✅ Azure IoT Hub
+✅ Azure IoT Edge
+✅ Azure Digital Twins
+✅ Edge Computing with Azure
+✅ Real-World IoT Use Cases
+
+🔹 Module 14: Hands-On Projects & Real-World Scenarios
+🔹 Deploy a Web App on Azure App Service
+🔹 Setup a CI/CD Pipeline using Azure DevOps
+🔹 Build & Deploy a Serverless Function in Azure
+🔹 Configure Virtual Machines & Load Balancer
+🔹 Implement a Secure API using Azure API Management
+🔹 Create a Data Pipeline using Azure Data Factory
+🔹 Design a Cloud-Native Architecture
+
+🔹 Module 15: Azure Certifications & Career Path
+✅ Azure Certifications Overview
+✅ AZ-900 (Fundamentals)
+✅ AZ-104 (Administrator)
+✅ AZ-204 (Developer)
+✅ AZ-305 (Solutions Architect)
+✅ AZ-500 (Security Engineer)
