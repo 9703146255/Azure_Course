@@ -1,2 +1,165 @@
 password :: Thirumalesh@12
 username :: thiru
+================================================================================
+Azure Basic Commands
+================================================================================
+ Install & Start Apache on Linux (Ubuntu/Debian)
+-------------------------------------------------
+# Update package repository
+sudo apt update 
+
+# Install Apache
+sudo apt install apache2 -y  
+
+# Start Apache server
+sudo systemctl start apache2  
+
+# Enable Apache to start on boot
+sudo systemctl enable apache2  
+
+# Check Apache status
+sudo systemctl status apache2  
+
+# Restart Apache (if needed)
+sudo systemctl restart apache2  
+
+# Stop Apache
+sudo systemctl stop apache2  
+🔹 Access Apache Web Server:
+
+Open browser and go to: http://localhost/
+🔹 Install & Start Apache on CentOS/RHEL
+
+# Update system packages
+sudo yum update -y  
+
+# Install Apache
+sudo yum install httpd -y  
+
+# Start Apache
+sudo systemctl start httpd  
+
+# Enable Apache on boot
+sudo systemctl enable httpd  
+
+# Check Apache status
+sudo systemctl status httpd  
+
+# Restart Apache
+sudo systemctl restart httpd  
+
+# Stop Apache
+sudo systemctl stop httpd  
+-------------------------------------------------
+🔹 Install & Start Apache on Windows
+-------------------------------------------------
+Download Apache from Apache Lounge
+Extract it to C:\Apache24\
+Open Command Prompt as Administrator and run:
+cmd
+Copy
+Edit
+cd C:\Apache24\bin
+httpd.exe
+Open browser and go to http://localhost/
+📌 Azure CLI Commands (Basic to Advanced)
+-------------------------------------------------
+🔹 Azure Login & Subscription
+-------------------------------------------------
+
+# Login to Azure
+az login  
+
+# List Azure subscriptions
+az account list --output table  
+
+# Set default subscription
+az account set --subscription "SUBSCRIPTION_NAME"  
+🔹 Azure Resource Group Commands
+
+# Create a resource group
+az group create --name MyResourceGroup --location eastus  
+
+# List resource groups
+az group list --output table  
+
+# Delete a resource group
+az group delete --name MyResourceGroup --yes 
+-------------------------------------------------
+🔹 Azure Virtual Machines (VM)
+-------------------------------------------------
+
+# Create a new VM
+az vm create --resource-group MyResourceGroup --name MyVM \
+   --image UbuntuLTS --admin-username azureuser --generate-ssh-keys  
+
+# Start a VM
+az vm start --resource-group MyResourceGroup --name MyVM  
+
+# Stop a VM
+az vm stop --resource-group MyResourceGroup --name MyVM  
+
+# Delete a VM
+az vm delete --resource-group MyResourceGroup --name MyVM --yes 
+-------------------------------------------------
+🔹 Azure Storage Commands
+-------------------------------------------------
+# Create a storage account
+az storage account create --name mystorageaccount --resource-group MyResourceGroup --location eastus --sku Standard_LRS  
+
+# List storage accounts
+az storage account list --output table  
+
+# Delete a storage account
+az storage account delete --name mystorageaccount --resource-group MyResourceGroup --yes  
+
+-------------------------------------------------
+🔹 Azure Networking
+-------------------------------------------------
+# Create a Virtual Network
+az network vnet create --name MyVnet --resource-group MyResourceGroup --subnet-name MySubnet  
+
+# Create a Network Security Group (NSG)
+az network nsg create --resource-group MyResourceGroup --name MyNSG  
+
+# Create a Public IP Address
+az network public-ip create --resource-group MyResourceGroup --name MyPublicIP  
+-------------------------------------------------
+🔹 Azure Web Apps
+-------------------------------------------------
+# Create an App Service Plan
+az appservice plan create --name MyPlan --resource-group MyResourceGroup --sku F1  
+
+# Create a Web App
+az webapp create --name MyWebApp --resource-group MyResourceGroup --plan MyPlan  
+
+# Deploy code to Web App
+az webapp deployment source config --name MyWebApp --resource-group MyResourceGroup --repo-url GITHUB_REPO_URL --branch main  
+
+# Delete a Web App
+az webapp delete --name MyWebApp --resource-group MyResourceGroup  
+-------------------------------------------------
+🔹 Azure Kubernetes Service (AKS)
+-------------------------------------------------
+# Create an AKS Cluster
+az aks create --resource-group MyResourceGroup --name MyAKSCluster --node-count 2 --enable-addons monitoring --generate-ssh-keys  
+
+# Get AKS Credentials
+az aks get-credentials --resource-group MyResourceGroup --name MyAKSCluster  
+
+# Deploy an application to AKS
+kubectl apply -f my-deployment.yaml  
+
+# Delete AKS Cluster
+az aks delete --resource-group MyResourceGroup --name MyAKSCluster --yes  
+-------------------------------------------------
+🔹 Azure Database Services
+-------------------------------------------------
+# Create an Azure SQL Database
+az sql server create --name MySQLServer --resource-group MyResourceGroup --location eastus --admin-user myadmin --admin-password MyPassword123!  
+
+# Create a database inside the SQL server
+az sql db create --resource-group MyResourceGroup --server MySQLServer --name MyDatabase --service-objective S0  
+
+# Delete an Azure SQL Database
+az sql db delete --resource-group MyResourceGroup --server MySQLServer --name MyDatabase --yes  
