@@ -1,5 +1,20 @@
 password :: Thirumalesh@12
 username :: thiru
+
+
+install package manager :: dotnet add package Azure.Storage.Blobs
+*****************************************************
+
+using Azure.Storage.Blobs;
+string connectionString = 
+"";
+
+BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+string containerName="scripts"
+BlobContainerClient blobContainerClient=await blobServiceClient.CreateBlobContainerAsync(containerName);
+Console.WriteLine($"Container [{blobContainerClient.Name}] created");
+
+
 ================================================================================
 Azure Basic Commands
 ================================================================================
